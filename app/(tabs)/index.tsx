@@ -65,7 +65,7 @@ const Page = (props: Props) => {
   return (
     <ScrollView style={[styles.container, { paddingTop: safeTop }]}>
       <Header />
-      <SearchBar />
+      <SearchBar withHorizontal={true} />
       {isLoading ? (
         <Loading size={'large'} />
       ) : <BreakingNews newsList={breakingNews} />}
